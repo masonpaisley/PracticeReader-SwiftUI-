@@ -7,10 +7,18 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Master: View {
     @StateObject var data = Data()
     
     var body: some View {
+        NavigationView {
+            List(data.articles) { article in
+                NavigationLink (destination: ArticleDetail(article: article)) {
+                    Row(article: article)
+                }
+            }
+        }
+        .navigationTitle("21321")
 //        VStack {
 //            Text("tuijian")
 //            Divider()
@@ -18,18 +26,12 @@ struct ContentView: View {
 //                Row(article: article)
 //            }
 //        }
-        NavigationView {
-            List(data.articles) { article in
-                Row(article: article)
-            }
-        }
-        .navigationTitle("推荐")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Master_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Master()
     }
 }
 
@@ -39,7 +41,7 @@ struct Row: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(article.title)
-                .font(.title)
+                .font(.title2)
                 .padding(.bottom, 4)
             Text(article.body)
                 .lineLimit(3)
