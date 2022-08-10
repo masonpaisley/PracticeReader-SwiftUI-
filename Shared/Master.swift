@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Master: View {
     @StateObject var data = Data()
+    @AppStorage("darkMode") var darkMode = false
     
     var body: some View {
         NavigationView {
@@ -17,15 +18,12 @@ struct Master: View {
                     Row(article: article)
                 }
             }
+            .navigationTitle("推荐")
+            .toolbar {
+                DarkModeControl(darkMode: $darkMode)
+            }
         }
-        .navigationTitle("21321")
-//        VStack {
-//            Text("tuijian")
-//            Divider()
-//            List(data.articles) { article in
-//                Row(article: article)
-//            }
-//        }
+        .preferredColorScheme(darkMode ? .dark : .light)
     }
 }
 
@@ -42,10 +40,13 @@ struct Row: View {
         VStack(alignment: .leading) {
             Text(article.title)
                 .font(.title2)
+                .fontWeight(.medium)
                 .padding(.bottom, 4)
             Text(article.body)
+                .font(.callout)
                 .lineLimit(3)
         }
         .padding(.vertical, 12)
     }
 }
+
