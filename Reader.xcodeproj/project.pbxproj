@@ -20,6 +20,8 @@
 		4A20329328A2BE4900D4E4E2 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A20329228A2BE4900D4E4E2 /* Article.swift */; };
 		4A75B20928A3FCE200F99797 /* ArticleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75B20828A3FCE200F99797 /* ArticleDetail.swift */; };
 		4A75B20B28A4029F00F99797 /* DarkModeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75B20A28A4029F00F99797 /* DarkModeControl.swift */; };
+		4A75B20D28A4033F00F99797 /* Vibraion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75B20C28A4033F00F99797 /* Vibraion.swift */; };
+		4A75B20F28A40A8E00F99797 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75B20E28A40A8E00F99797 /* MotionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		4A20329228A2BE4900D4E4E2 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		4A75B20828A3FCE200F99797 /* ArticleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetail.swift; sourceTree = "<group>"; };
 		4A75B20A28A4029F00F99797 /* DarkModeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeControl.swift; sourceTree = "<group>"; };
+		4A75B20C28A4033F00F99797 /* Vibraion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibraion.swift; sourceTree = "<group>"; };
+		4A75B20E28A40A8E00F99797 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				4A20329228A2BE4900D4E4E2 /* Article.swift */,
 				4A75B20828A3FCE200F99797 /* ArticleDetail.swift */,
 				4A75B20A28A4029F00F99797 /* DarkModeControl.swift */,
+				4A75B20E28A40A8E00F99797 /* MotionManager.swift */,
+				4A75B20C28A4033F00F99797 /* Vibraion.swift */,
 				4A20325828A2BD8E00D4E4E2 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -309,8 +315,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A20328028A2BD8E00D4E4E2 /* Master.swift in Sources */,
+				4A75B20F28A40A8E00F99797 /* MotionManager.swift in Sources */,
 				4A75B20B28A4029F00F99797 /* DarkModeControl.swift in Sources */,
 				4A75B20928A3FCE200F99797 /* ArticleDetail.swift in Sources */,
+				4A75B20D28A4033F00F99797 /* Vibraion.swift in Sources */,
 				4A20327E28A2BD8E00D4E4E2 /* ReaderApp.swift in Sources */,
 				4A20329328A2BE4900D4E4E2 /* Article.swift in Sources */,
 			);

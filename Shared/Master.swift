@@ -10,6 +10,7 @@ import SwiftUI
 struct Master: View {
     @StateObject var data = Data()
     @AppStorage("darkMode") var darkMode = false
+    @EnvironmentObject var motion: MotionManager
     
     var body: some View {
         NavigationView {
@@ -19,19 +20,22 @@ struct Master: View {
                 }
             }
             .navigationTitle("推荐")
+            
             .toolbar {
                 DarkModeControl(darkMode: $darkMode)
             }
         }
+//        .scaleEffect(max(1, (0.7 + -motion.y * 0.45)))
+        
         .preferredColorScheme(darkMode ? .dark : .light)
     }
 }
 
-struct Master_Previews: PreviewProvider {
-    static var previews: some View {
-        Master()
-    }
-}
+//struct Master_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Master()
+//    }
+//}
 
 struct Row: View {
     var article: Article

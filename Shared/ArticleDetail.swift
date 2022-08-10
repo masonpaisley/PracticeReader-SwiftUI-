@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ArticleDetail: View {
     var article: Article
+    @EnvironmentObject var motion: MotionManager
     
     var body: some View {
         ScrollView {
@@ -17,6 +18,9 @@ struct ArticleDetail: View {
                     .font(.title3)
                 Text(article.body)
             }
+            .offset(x: motion.x * 80, y: motion.y * 80)
+            .scaleEffect(max(1, (0.7 + -motion.y * 0.4)))
+            .rotation3DEffect(.degrees(motion.x * 80), axis: (x: 0, y: 1, z: 0))
             .padding()
         }
     }

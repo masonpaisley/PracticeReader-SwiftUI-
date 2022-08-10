@@ -7,11 +7,13 @@
 
 import SwiftUI
 
+// 黑暗模式控制
 struct DarkModeControl: View {
     @Binding var darkMode: Bool
     
     var body: some View {
         Button(action: {
+            Vibration.light.vibrate()
             darkMode.toggle()
         }, label: {
             Image(systemName: darkMode ? "sun.max.fill" : "moon.fill")
