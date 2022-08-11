@@ -8,6 +8,7 @@
 import SwiftUI
 import LocalAuthentication
 
+
 @main
 struct ReaderApp: App {
     let motionManager = MotionManager()
@@ -19,11 +20,20 @@ struct ReaderApp: App {
                 if locked {
                     LockedView(authorize: authorize) // 当函数作为参数使用时，只需要使用其常量名即可
                 } else {
-                    Master()
-                        .environmentObject(motionManager) // 用于把这个信息传递给应用的其它视图使用
+                    TabView {
+                        Master()
+                            .environmentObject(motionManager) // 用于把这个信息传递给应用的其它视图使用
+                            .tabItem {
+                                Label("阅读", systemImage: "books.vertical")
+                            }
+                        ReadingNote()
+                            .tabItem {
+                                Label("笔记", systemImage: "note.text")
+                            }
+                    }
                 }
             }
-            .onAppear {authorize()} // 开机时，调用faceID
+            .onAppear(perform: authorize) // 开机时，调用faceID
         }
     }
     

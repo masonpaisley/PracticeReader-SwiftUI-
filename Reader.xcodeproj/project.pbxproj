@@ -18,10 +18,12 @@
 		4A20328228A2BD8E00D4E4E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A20325828A2BD8E00D4E4E2 /* Assets.xcassets */; };
 		4A20328328A2BD8E00D4E4E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A20325828A2BD8E00D4E4E2 /* Assets.xcassets */; };
 		4A20329328A2BE4900D4E4E2 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A20329228A2BE4900D4E4E2 /* Article.swift */; };
+		4A2E8E6028A4CB8900A33BD5 /* BetterSafariView in Frameworks */ = {isa = PBXBuildFile; productRef = 4A2E8E5F28A4CB8900A33BD5 /* BetterSafariView */; };
 		4A75B20928A3FCE200F99797 /* ArticleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75B20828A3FCE200F99797 /* ArticleDetail.swift */; };
 		4A75B20B28A4029F00F99797 /* DarkModeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75B20A28A4029F00F99797 /* DarkModeControl.swift */; };
 		4A75B20D28A4033F00F99797 /* Vibraion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75B20C28A4033F00F99797 /* Vibraion.swift */; };
 		4A75B20F28A40A8E00F99797 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75B20E28A40A8E00F99797 /* MotionManager.swift */; };
+		4A75B21128A4BAA400F99797 /* ReadingNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75B21028A4BAA400F99797 /* ReadingNote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,7 @@
 		4A75B20A28A4029F00F99797 /* DarkModeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeControl.swift; sourceTree = "<group>"; };
 		4A75B20C28A4033F00F99797 /* Vibraion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibraion.swift; sourceTree = "<group>"; };
 		4A75B20E28A40A8E00F99797 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		4A75B21028A4BAA400F99797 /* ReadingNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingNote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A2E8E6028A4CB8900A33BD5 /* BetterSafariView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +105,7 @@
 				4A20326D28A2BD8E00D4E4E2 /* Tests iOS */,
 				4A20327928A2BD8E00D4E4E2 /* Tests macOS */,
 				4A20325E28A2BD8E00D4E4E2 /* Products */,
+				4A2E8E5E28A4CB8900A33BD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +118,7 @@
 				4A75B20828A3FCE200F99797 /* ArticleDetail.swift */,
 				4A75B20A28A4029F00F99797 /* DarkModeControl.swift */,
 				4A75B20E28A40A8E00F99797 /* MotionManager.swift */,
+				4A75B21028A4BAA400F99797 /* ReadingNote.swift */,
 				4A75B20C28A4033F00F99797 /* Vibraion.swift */,
 				4A20325828A2BD8E00D4E4E2 /* Assets.xcassets */,
 			);
@@ -156,6 +162,13 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		4A2E8E5E28A4CB8900A33BD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,6 +185,9 @@
 			dependencies = (
 			);
 			name = "Reader (iOS)";
+			packageProductDependencies = (
+				4A2E8E5F28A4CB8900A33BD5 /* BetterSafariView */,
+			);
 			productName = "Reader (iOS)";
 			productReference = 4A20325D28A2BD8E00D4E4E2 /* Reader.app */;
 			productType = "com.apple.product-type.application";
@@ -264,6 +280,9 @@
 				Base,
 			);
 			mainGroup = 4A20325028A2BD8D00D4E4E2;
+			packageReferences = (
+				4A2E8E5D28A4CAA500A33BD5 /* XCRemoteSwiftPackageReference "BetterSafariView" */,
+			);
 			productRefGroup = 4A20325E28A2BD8E00D4E4E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -317,6 +336,7 @@
 				4A20328028A2BD8E00D4E4E2 /* Master.swift in Sources */,
 				4A75B20F28A40A8E00F99797 /* MotionManager.swift in Sources */,
 				4A75B20B28A4029F00F99797 /* DarkModeControl.swift in Sources */,
+				4A75B21128A4BAA400F99797 /* ReadingNote.swift in Sources */,
 				4A75B20928A3FCE200F99797 /* ArticleDetail.swift in Sources */,
 				4A75B20D28A4033F00F99797 /* Vibraion.swift in Sources */,
 				4A20327E28A2BD8E00D4E4E2 /* ReaderApp.swift in Sources */,
@@ -723,6 +743,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A2E8E5D28A4CAA500A33BD5 /* XCRemoteSwiftPackageReference "BetterSafariView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitee.com/masonpaisley/BetterSafariView.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A2E8E5F28A4CB8900A33BD5 /* BetterSafariView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A2E8E5D28A4CAA500A33BD5 /* XCRemoteSwiftPackageReference "BetterSafariView" */;
+			productName = BetterSafariView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4A20325128A2BD8D00D4E4E2 /* Project object */;
 }
