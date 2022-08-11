@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Master: View {
-    @StateObject var data = Data()
+    @StateObject var data = TabReadingDate()
     @AppStorage("darkMode") var darkMode = false
     @EnvironmentObject var motion: MotionManager
     

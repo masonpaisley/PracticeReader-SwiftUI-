@@ -13,7 +13,7 @@ struct Article: Codable, Identifiable {
     var body: String
 }
 
-class Data: ObservableObject {
+class TabReadingDate: ObservableObject {
     @Published var articles = [Article]()
     
     init () {

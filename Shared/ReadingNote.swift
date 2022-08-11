@@ -9,7 +9,7 @@ import SwiftUI
 import BetterSafariView
 
 struct ReadingNote: View {
-    let text = "目的地"
+    let text = "在外部浏览器打开"
     let image = "circle"
     @State var presentingSafarview = false
     
@@ -18,14 +18,14 @@ struct ReadingNote: View {
             ScrollView {
                 VStack {
                     Link(destination: URL(string: "https://sspai.com/post/64899")!) {
-                        RoundButton(text: text, image: image)
+                        RoundButton(text: text, image: "safari")
                     }.padding(8)
                     
                     // 用第三方库BetterSafariView 跳转外部链接
                     Button {
                         self.presentingSafarview = true
                     } label: {
-                        RoundButton(text: text, image: image)
+                        RoundButton(text: "在应用内打开", image: "arrow.up.forward.app")
                     }
                     .safariView(isPresented: $presentingSafarview) {
                         SafariView (
