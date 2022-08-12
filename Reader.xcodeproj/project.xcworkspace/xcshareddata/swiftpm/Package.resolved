@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "bettersafariview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitee.com/masonpaisley/BetterSafariView.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9c051d20dbb50fa61d014d87b4ab6c5504408a73"
+      }
+    },
+    {
+      "identity" : "imagepickerview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitee.com/masonpaisley/ImagePickerView.git",
+      "state" : {
+        "revision" : "b84dd1c85a65cddba40c89699cd63ba0cb248dbd",
+        "version" : "0.5.0"
+      }
+    }
+  ],
+  "version" : 2
+}

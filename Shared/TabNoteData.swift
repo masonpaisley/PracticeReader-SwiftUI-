@@ -5,13 +5,14 @@
 //  Created by jinzhao wang on 2022/8/11.
 //
 
-import Foundation
+import SwiftUI
 
 // Model
 struct Note: Codable, Identifiable {
     var id: UUID
     var title: String
     var content: String
+    var imageURLAppendix: String?
 }
 
 // ModelView
@@ -24,6 +25,20 @@ class TabNoteData: ObservableObject {
     
     init() {
         notes = getNotes()
+    }
+    
+    // 读取图片时，应提供图片地址参数 imageURLAppendix，图片读取函数 getImage 会返回图片数据
+    func getImage(_ imageURLAppendix: String) -> UIImage {
+        let url = TabNoteData.sandboxURL.appendingPathComponent(imageURLAppendix)
+        let imageData = try! Data(contentsOf: url)
+        return UIImage(data: imageData, scale: 0.5)!
+    }
+    
+    func saveImage(id: UUID, data: Data) {
+        DispatchQueue.global(qos: .userInitiated).async {
+            let url = TabNoteData.sandboxURL.appendingPathComponent("\(id).png")
+            try? data.write(to: url)
+        }
     }
     
     // getNotes() 负责读取本地的 JSON 文件，并返回 [notes] 数组；saveNotes() 负责将数据存储到本地

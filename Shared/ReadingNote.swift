@@ -15,7 +15,6 @@ struct ReadingNote: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
                 VStack {
                     HStack {
                         Link(destination: URL(string: "https://sspai.com/post/64899")!) {
@@ -40,9 +39,7 @@ struct ReadingNote: View {
                         }
                         // etterSafariView 框架的作者提供了三类修改器：.preferredBarAccentColor() 用于定制浏览器标签栏背景的颜色、.preferredControlAccentColor() 、.dismissButtonStyle()
                     }
-                }
-                Spacer()
-                NoteEntryAndList()
+                    NoteEntryAndList()
             }
             .navigationTitle("链接")
         }
