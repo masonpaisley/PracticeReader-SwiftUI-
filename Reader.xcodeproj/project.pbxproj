@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A1B294A28A7AA5700E32D28 /* Reader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A1B294828A7AA5700E32D28 /* Reader.xcdatamodeld */; };
+		4A1B295028A7AB7200E32D28 /* CloudData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1B294F28A7AB7200E32D28 /* CloudData.swift */; };
+		4A1B295228A7B7F200E32D28 /* LocalRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1B295128A7B7F200E32D28 /* LocalRecord.swift */; };
 		4A20326F28A2BD8E00D4E4E2 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A20326E28A2BD8E00D4E4E2 /* Tests_iOS.swift */; };
 		4A20327128A2BD8E00D4E4E2 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A20327028A2BD8E00D4E4E2 /* Tests_iOSLaunchTests.swift */; };
 		4A20327B28A2BD8E00D4E4E2 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A20327A28A2BD8E00D4E4E2 /* Tests_macOS.swift */; };
@@ -48,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A1B294928A7AA5700E32D28 /* CheckInModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CheckInModel.xcdatamodel; sourceTree = "<group>"; };
+		4A1B294F28A7AB7200E32D28 /* CloudData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudData.swift; sourceTree = "<group>"; };
+		4A1B295128A7B7F200E32D28 /* LocalRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRecord.swift; sourceTree = "<group>"; };
 		4A20325628A2BD8D00D4E4E2 /* ReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderApp.swift; sourceTree = "<group>"; };
 		4A20325728A2BD8D00D4E4E2 /* Master.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Master.swift; sourceTree = "<group>"; };
 		4A20325828A2BD8E00D4E4E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 		4A2E8E6128A50F0500A33BD5 /* TabNoteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNoteData.swift; sourceTree = "<group>"; };
 		4A2E8E6328A68A2200A33BD5 /* NoteEntryAndList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEntryAndList.swift; sourceTree = "<group>"; };
 		4A2E8E6528A68DF200A33BD5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4A5F229128A7FF1F00141202 /* Reader--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Reader--iOS--Info.plist"; sourceTree = "<group>"; };
 		4A75B20828A3FCE200F99797 /* ArticleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetail.swift; sourceTree = "<group>"; };
 		4A75B20A28A4029F00F99797 /* DarkModeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeControl.swift; sourceTree = "<group>"; };
 		4A75B20C28A4033F00F99797 /* Vibraion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibraion.swift; sourceTree = "<group>"; };
@@ -105,19 +112,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4A20325028A2BD8D00D4E4E2 = {
+		4A1B294B28A7AA6100E32D28 /* ViewModel + Model */ = {
 			isa = PBXGroup;
 			children = (
-				4A20325528A2BD8D00D4E4E2 /* Shared */,
-				4A20326428A2BD8E00D4E4E2 /* macOS */,
-				4A20326D28A2BD8E00D4E4E2 /* Tests iOS */,
-				4A20327928A2BD8E00D4E4E2 /* Tests macOS */,
-				4A20325E28A2BD8E00D4E4E2 /* Products */,
-				4A2E8E5E28A4CB8900A33BD5 /* Frameworks */,
+				4A1B294828A7AA5700E32D28 /* Reader.xcdatamodeld */,
+				4A1B294F28A7AB7200E32D28 /* CloudData.swift */,
 			);
+			path = "ViewModel + Model";
 			sourceTree = "<group>";
 		};
-		4A20325528A2BD8D00D4E4E2 /* Shared */ = {
+		4A1B294D28A7AA9100E32D28 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				4A20325628A2BD8D00D4E4E2 /* ReaderApp.swift */,
@@ -131,6 +135,29 @@
 				4A2E8E6128A50F0500A33BD5 /* TabNoteData.swift */,
 				4A75B20C28A4033F00F99797 /* Vibraion.swift */,
 				4A2E8E6528A68DF200A33BD5 /* Extension.swift */,
+				4A1B295128A7B7F200E32D28 /* LocalRecord.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A20325028A2BD8D00D4E4E2 = {
+			isa = PBXGroup;
+			children = (
+				4A5F229128A7FF1F00141202 /* Reader--iOS--Info.plist */,
+				4A20325528A2BD8D00D4E4E2 /* Shared */,
+				4A20326428A2BD8E00D4E4E2 /* macOS */,
+				4A20326D28A2BD8E00D4E4E2 /* Tests iOS */,
+				4A20327928A2BD8E00D4E4E2 /* Tests macOS */,
+				4A20325E28A2BD8E00D4E4E2 /* Products */,
+				4A2E8E5E28A4CB8900A33BD5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4A20325528A2BD8D00D4E4E2 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4A1B294D28A7AA9100E32D28 /* Views */,
+				4A1B294B28A7AA6100E32D28 /* ViewModel + Model */,
 				4A20325828A2BD8E00D4E4E2 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -349,6 +376,8 @@
 				4A2E8E6428A68A2200A33BD5 /* NoteEntryAndList.swift in Sources */,
 				4A20328028A2BD8E00D4E4E2 /* Master.swift in Sources */,
 				4A2E8E6228A50F0500A33BD5 /* TabNoteData.swift in Sources */,
+				4A1B294A28A7AA5700E32D28 /* Reader.xcdatamodeld in Sources */,
+				4A1B295228A7B7F200E32D28 /* LocalRecord.swift in Sources */,
 				4A75B20F28A40A8E00F99797 /* MotionManager.swift in Sources */,
 				4A2E8E6628A68DF200A33BD5 /* Extension.swift in Sources */,
 				4A75B20B28A4029F00F99797 /* DarkModeControl.swift in Sources */,
@@ -356,6 +385,7 @@
 				4A75B20928A3FCE200F99797 /* ArticleDetail.swift in Sources */,
 				4A75B20D28A4033F00F99797 /* Vibraion.swift in Sources */,
 				4A20327E28A2BD8E00D4E4E2 /* ReaderApp.swift in Sources */,
+				4A1B295028A7AB7200E32D28 /* CloudData.swift in Sources */,
 				4A20329328A2BE4900D4E4E2 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +552,7 @@
 				DEVELOPMENT_TEAM = PM4297ZZX2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Reader--iOS--Info.plist";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "解锁应用";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -553,6 +584,7 @@
 				DEVELOPMENT_TEAM = PM4297ZZX2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Reader--iOS--Info.plist";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "解锁应用";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -793,6 +825,19 @@
 			productName = ImagePickerView;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		4A1B294828A7AA5700E32D28 /* Reader.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4A1B294928A7AA5700E32D28 /* CheckInModel.xcdatamodel */,
+			);
+			currentVersion = 4A1B294928A7AA5700E32D28 /* CheckInModel.xcdatamodel */;
+			path = Reader.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4A20325128A2BD8D00D4E4E2 /* Project object */;
 }

@@ -79,7 +79,6 @@ struct NoteEntryAndList: View {
                 .onDelete(perform: delete)
             }
             .listStyle(InsetGroupedListStyle())
-            
         }
     }
     
